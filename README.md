@@ -1,10 +1,8 @@
 <h1 align="center">Material Spinner</h1>
-
-<p align="center">
-  <a target="_blank" href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH"><img src="https://img.shields.io/badge/API-14%2B-blue.svg?style=flat" alt="API" /></a>
-  <a target="_blank" href="LICENSE"><img src="http://img.shields.io/:license-apache-blue.svg" alt="License" /></a>
-  [![](https://jitpack.io/v/zilchzz/MaterialSpinner.svg)](https://jitpack.io/#zilchzz/MaterialSpinner)
-</p>
+  
+[![License](http://img.shields.io/:license-apache-blue.svg?style=flat)]()
+[![API](https://img.shields.io/badge/API-14%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=11)
+[![](https://jitpack.io/v/zilchzz/MaterialSpinner.svg)](https://jitpack.io/#zilchzz/MaterialSpinner)
 
 ___
 
