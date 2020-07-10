@@ -6,7 +6,7 @@
 
 ___
 
-![DEMO GIF](demo.gif =250x400)
+<img src="demo.gif" width = "40%" />
 
 Usage
 -----
