@@ -15,6 +15,24 @@ ___
 Usage
 -----
 
+Add it in your root build.gradle at the end of repositories
+
+```groovy
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add the dependency
+
+```groovy
+dependencies {
+    implementation 'com.github.zilchzz:MaterialSpinner:1.3.2'
+}
+```
+
 Add the spinner to your layout XML:
 
 ```xml
@@ -56,24 +74,10 @@ You can add attributes to customize the view. Available attributes:
 | ms_popup_padding_left   | dimension | set the left padding of the drop-down items            |
 | ms_popup_padding_bottom | dimension | set the bottom padding of the drop-down items          |
 | ms_popup_padding_right  | dimension | set the right padding of the drop-down items           |
+| ms_divider_height       | dimension | set the height of divider                              |
+| ms_divider_color        | color     | set the color of divider                               |
+| ms_dropdown_text_color  | color     | set the text color of the drop-down items              |
 
-Download
---------
-
-Download [the latest AAR](https://repo1.maven.org/maven2/com/jaredrummler/material-spinner/1.3.1/material-spinner-1.3.1.aar) or grab via Gradle:
-
-```groovy
-compile 'com.jaredrummler:material-spinner:1.3.1'
-```
-or Maven:
-```xml
-<dependency>
-  <groupId>com.jaredrummler</groupId>
-  <artifactId>material-spinner</artifactId>
-  <version>1.3.1</version>
-  <type>aar</type>
-</dependency>
-```
 
 Acknowledgements
 ----------------
