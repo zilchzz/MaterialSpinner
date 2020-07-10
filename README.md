@@ -1,10 +1,10 @@
-#MaterialSpinner
+Perview
+-----
 
 [![License](http://img.shields.io/:license-apache-blue.svg?style=flat)]()
 [![API](https://img.shields.io/badge/API-14%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=11)
 [![](https://jitpack.io/v/zilchzz/MaterialSpinner.svg)](https://jitpack.io/#zilchzz/MaterialSpinner)
 
-___
 
 <img src="demo.gif" width = "40%" />
 
@@ -25,7 +25,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    implementation 'com.github.zilchzz:MaterialSpinner:1.3.2'
+    implementation 'com.github.zilchzz:MaterialSpinner:1.3.3'
 }
 ```
 
