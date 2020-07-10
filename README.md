@@ -3,9 +3,7 @@
 <p align="center">
   <a target="_blank" href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH"><img src="https://img.shields.io/badge/API-14%2B-blue.svg?style=flat" alt="API" /></a>
   <a target="_blank" href="LICENSE"><img src="http://img.shields.io/:license-apache-blue.svg" alt="License" /></a>
-  <a target="_blank" href="https://maven-badges.herokuapp.com/maven-central/com.jaredrummler/material-spinner"><img src="https://maven-badges.herokuapp.com/maven-central/com.jaredrummler/material-spinner/badge.svg" alt="Maven Central" /></a>
-  <a target="_blank" href="http://www.methodscount.com/?lib=com.jaredrummler%3Amaterial-spinner%3A1.3.1"><img src="https://img.shields.io/badge/methods-197-e91e63.svg" /></a>
-  <a target="_blank" href="https://twitter.com/jaredrummler"><img src="https://img.shields.io/twitter/follow/jaredrummler.svg?style=social" /></a>
+  [![](https://jitpack.io/v/zilchzz/MaterialSpinner.svg)](https://jitpack.io/#zilchzz/MaterialSpinner)
 </p>
 
 ___
@@ -38,8 +36,17 @@ Add the spinner to your layout XML:
 ```xml
 <com.jaredrummler.materialspinner.MaterialSpinner
     android:id="@+id/spinner"
+    app:ms_dropdown_max_height="350dp"
+    app:ms_dropdown_text_color="#7c7d7f"
+    app:ms_divider_color="#000000"
+    app:ms_text_color="#dadadd"
+    app:ms_divider_height="0.5dp"
+    app:ms_dropdown_height="wrap_content"
+    app:ms_background_selector="@drawable/bg_trade_spinner"
+    app:ms_background_color="#191b20"
+    app:ms_arrow_tint="#696A6D"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+    android:layout_height="wrap_content" />
 ```
 
 Add items to the spinner and listen for clicks:
@@ -83,6 +90,7 @@ Acknowledgements
 ----------------
 
 [Nice Spinner](https://github.com/arcadefire/nice-spinner) by Angelo Marchesin
+[MaterialSpinner](https://github.com/jaredrummler/MaterialSpinner) forked from MaterialSpinner by jaredrummler
 
 License
 --------
