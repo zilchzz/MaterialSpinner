@@ -23,7 +23,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="start|center_vertical"
     android:ellipsize="marquee"
-    android:gravity="center_vertical"
+    android:gravity="center"
     android:minHeight="@dimen/ms__item_height"
     android:paddingBottom="@dimen/ms__popup_padding_top"
     android:paddingLeft="@dimen/ms__popup_padding_left"

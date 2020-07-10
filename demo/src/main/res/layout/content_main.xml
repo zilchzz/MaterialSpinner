@@ -33,6 +33,7 @@
     <com.jaredrummler.materialspinner.MaterialSpinner
         android:id="@+id/spinner"
         app:ms_dropdown_max_height="350dp"
+        app:ms_dropdown_text_gravity="center"
         app:ms_dropdown_text_color="#7c7d7f"
         app:ms_divider_color="#000000"
         app:ms_text_color="#dadadd"
@@ -41,7 +42,7 @@
         app:ms_background_selector="@drawable/bg_trade_spinner"
         app:ms_background_color="#191b20"
         app:ms_arrow_tint="#696A6D"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>

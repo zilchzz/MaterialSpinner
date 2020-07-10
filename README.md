@@ -84,6 +84,7 @@ You can add attributes to customize the view. Available attributes:
 | ms_divider_height       | dimension | set the height of divider                              |
 | ms_divider_color        | color     | set the color of divider                               |
 | ms_dropdown_text_color  | color     | set the text color of the drop-down items              |
+| ms_dropdown_text_gravity| int       | set the text gravity of the drop-down items              |
 
 
 Acknowledgements

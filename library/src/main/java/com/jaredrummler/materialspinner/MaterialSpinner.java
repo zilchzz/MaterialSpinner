@@ -78,6 +78,7 @@ public class MaterialSpinner extends TextView {
     private int dropDownTextColor;
     private int dividerColor;
     private int dividerHeight;
+    private int dropDownItemGravity;
     private int popupPaddingTop;
     private int popupPaddingLeft;
     private int popupPaddingBottom;
@@ -127,6 +128,7 @@ public class MaterialSpinner extends TextView {
             dropDownTextColor = ta.getColor(R.styleable.MaterialSpinner_ms_dropdown_text_color, defaultColor);
             dividerColor = ta.getColor(R.styleable.MaterialSpinner_ms_divider_color, Color.TRANSPARENT);
             dividerHeight = ta.getDimensionPixelSize(R.styleable.MaterialSpinner_ms_divider_height, 0);
+            dropDownItemGravity = ta.getInt(R.styleable.MaterialSpinner_ms_dropdown_text_gravity, Gravity.CENTER);
             hintColor = ta.getColor(R.styleable.MaterialSpinner_ms_hint_color, defaultColor);
             arrowColor = ta.getColor(R.styleable.MaterialSpinner_ms_arrow_tint, textColor);
             hideArrow = ta.getBoolean(R.styleable.MaterialSpinner_ms_hide_arrow, false);
@@ -447,7 +449,8 @@ public class MaterialSpinner extends TextView {
         this.adapter = new MaterialSpinnerAdapterWrapper(getContext(), adapter)
                 .setPopupPadding(popupPaddingLeft, popupPaddingTop, popupPaddingRight, popupPaddingBottom)
                 .setBackgroundSelector(backgroundSelector)
-                .setTextColor(dropDownTextColor);
+                .setTextColor(dropDownTextColor)
+                .setItemGravity(dropDownItemGravity);
         setAdapterInternal(this.adapter);
     }
 
@@ -460,6 +463,7 @@ public class MaterialSpinner extends TextView {
     public <T> void setAdapter(MaterialSpinnerAdapter<T> adapter) {
         this.adapter = adapter;
         this.adapter.setTextColor(dropDownTextColor);
+        this.adapter.setItemGravity(dropDownItemGravity);
         this.adapter.setBackgroundSelector(backgroundSelector);
         this.adapter.setPopupPadding(popupPaddingLeft, popupPaddingTop, popupPaddingRight, popupPaddingBottom);
         setAdapterInternal(adapter);
@@ -468,6 +472,7 @@ public class MaterialSpinner extends TextView {
     private void setAdapterInternal(@NonNull MaterialSpinnerBaseAdapter adapter) {
         boolean shouldResetPopupHeight = listView.getAdapter() != null;
         adapter.setHintEnabled(!TextUtils.isEmpty(hintText));
+        adapter.setItemGravity(dropDownItemGravity);
         listView.setAdapter(adapter);
         if (selectedIndex >= adapter.getCount()) {
             selectedIndex = 0;
