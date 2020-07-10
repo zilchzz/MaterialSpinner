@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2016 Jared Rummler
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,13 +27,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
+    android:background="#191b20"
     tools:showIn="@layout/activity_main">
-
-  <com.jaredrummler.materialspinner.MaterialSpinner
-      android:id="@+id/spinner"
-      app:ms_dropdown_max_height="350dp"
-      app:ms_dropdown_height="wrap_content"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"/>
+    
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner"
+        app:ms_dropdown_max_height="350dp"
+        app:ms_dropdown_text_color="#7c7d7f"
+        app:ms_divider_color="#000000"
+        app:ms_text_color="#dadadd"
+        app:ms_divider_height="0.5dp"
+        app:ms_dropdown_height="wrap_content"
+        app:ms_background_selector="@drawable/bg_trade_spinner"
+        app:ms_background_color="#191b20"
+        app:ms_arrow_tint="#696A6D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
