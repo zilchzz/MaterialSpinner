@@ -1,12 +1,12 @@
-<h1 align="center">Material Spinner</h1>
-  
+#MaterialSpinner
+
 [![License](http://img.shields.io/:license-apache-blue.svg?style=flat)]()
 [![API](https://img.shields.io/badge/API-14%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=11)
 [![](https://jitpack.io/v/zilchzz/MaterialSpinner.svg)](https://jitpack.io/#zilchzz/MaterialSpinner)
 
 ___
 
-![DEMO GIF](demo.gif "DEMO")
+![DEMO GIF](demo.gif =250x400)
 
 Usage
 -----
